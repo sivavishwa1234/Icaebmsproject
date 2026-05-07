@@ -1,0 +1,14 @@
+{
+  "name": "icaebms-workspace",
+  "version": "1.0.0",
+  "description": "Root workspace to run frontend and backend together",
+  "scripts": {
+    "install:all": "cd icaebms-backend && npm install && cd ../icaebms-gateway-main && npm install",
+    "dev:backend": "cd icaebms-backend && npm run dev",
+    "dev:frontend": "cd icaebms-gateway-main && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
