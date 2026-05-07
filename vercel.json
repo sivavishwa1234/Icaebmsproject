@@ -1,0 +1,9 @@
+{
+  "outputDirectory": "icaebms-gateway-main/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

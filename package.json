@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Root workspace to run frontend and backend together",
   "scripts": {
+    "build": "cd icaebms-gateway-main && npm install && npm run build",
     "install:all": "cd icaebms-backend && npm install && cd ../icaebms-gateway-main && npm install",
     "dev:backend": "cd icaebms-backend && npm run dev",
     "dev:frontend": "cd icaebms-gateway-main && npm run dev",
